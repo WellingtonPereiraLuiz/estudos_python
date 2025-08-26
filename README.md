@@ -48,6 +48,4 @@ Meus estudos aqui cobrem (ou irão cobrir) as seguintes áreas:
 Estou sempre aberto a dicas, sugestões e a me conectar com outros desenvolvedores. Sinta-se à vontade para entrar em contato!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wellington-pereira-luiz)
-![Contato](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white) 
-\
-**wellingtonpereiraluiz89@gmail.com**
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wellingtonpereiraluiz89@gmail.com)
