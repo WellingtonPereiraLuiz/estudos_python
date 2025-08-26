@@ -40,7 +40,6 @@ Meus estudos aqui cobrem (ou irão cobrir) as seguintes áreas:
 -   [ ] Básico de bibliotecas para análise de dados (Pandas, NumPy).
 -   [ ] Básico de desenvolvimento web (Flask/Django).
 
-*(A lista acima usa a sintaxe de checklist do Markdown. Você pode trocar `[ ]` por `[x]` conforme for avançando nos tópicos!)*
 
 ---
 
@@ -49,4 +48,6 @@ Meus estudos aqui cobrem (ou irão cobrir) as seguintes áreas:
 Estou sempre aberto a dicas, sugestões e a me conectar com outros desenvolvedores. Sinta-se à vontade para entrar em contato!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wellington-pereira-luiz)
-![Email](https://img.shields.io/badge/Email-wellingtonpereiraluiz89@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+![Contato](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white) 
+\
+**wellingtonpereiraluiz89@gmail.com**
