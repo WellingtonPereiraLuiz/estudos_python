@@ -6,3 +6,9 @@ Este exemplo demonstra como receber entrada do usuário e exibir uma mensagem
 
 nome = input("Digite seu nome: ")
 print(f"Olá, {nome}! Bem-vindo ao Python!")
+
+
+idade = input(int("Digite sua idade: "))
+print(idade)
+print(f"sua idade ", + idade)
+print(f"idade:{idade}")
