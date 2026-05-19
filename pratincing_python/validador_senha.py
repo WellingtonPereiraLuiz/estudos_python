@@ -20,3 +20,7 @@ elif " " in senha:
     print("- Não deve conter espaços.")
 else:
     print("Senha válida!")
+
+
+
+# Agora vamos fazer usando a biblioteca Regex para dificultar hahah
