@@ -4,67 +4,33 @@
 
 # ✅ Botão para copiar a senha gerada
 
-# ✅ Interface simples (CLI ou Web)
 
+import re
+import random
+import string
+import pyperclip
 
+print("Seja muito bem vindo ao seu gerador de senhas automaticos!")
+maiuscula = random.choice(string.ascii_uppercase)
+minuscula = random.choice(string.ascii_lowercase)
+numero = random.choice(string.digits)
+simbolo = random.choice(string.punctuation)
 
+caracteres = string.digits + string.ascii_lowercase + string.ascii_uppercase + string.ascii_letters + string.punctuation
 
-n = "n"
-while n == "n":
-    senha = input("Digite uma senha:")
+senha = ''.join(random.choices(caracteres, k=4))
 
-    if any(chr.isdigit() for chr in senha) and senha.isupper() and senha.islower():
-        print("Senha cuiuda")
-        n = input("Manter essa senha? S/N")
-    else:
-        print("Senha macia")
+senha_lista = [maiuscula, minuscula, numero, simbolo]
 
+random.shuffle(senha_lista)
 
+senha_final = "".join(senha_lista)
 
+print(senha_final)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Copiando para o sistema
+pyperclip.copy(senha_final)
+print("Senha copiada para a área de transferência! (Clipboard updated)")
 
 
 
