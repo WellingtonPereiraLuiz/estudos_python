@@ -22,5 +22,3 @@ else:
     print("Senha válida!")
 
 
-
-# Agora vamos fazer usando a biblioteca Regex para dificultar hahah
