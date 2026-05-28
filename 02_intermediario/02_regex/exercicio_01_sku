@@ -1,5 +1,10 @@
 import re
 
-teste = r"[A-Z][A-Z][A-Z]-[1-9][0-9]{2,3}"
-print(re.match(teste, "WLP-1234"))
+# [A-Z]{3}  -> Exatamente 3 letras maiúsculas
+# [1-9]     -> Exatamente 1 número de 1 a 9 (bloqueia o zero)
+# \d{3}     -> Exatamente 3 números quaisquer (completa os 4 exigidos)
+padrao_definitivo = r"^[A-Z]{3}-[1-9]\d{3}$"
 
+print(bool(re.match(padrao_definitivo, "WLP-1234")))  # True
+print(bool(re.match(padrao_definitivo, "WLP-0123")))  # False (zero no início)
+print(bool(re.match(padrao_definitivo, "WLP-12345"))) # False (excesso barrado pelo $)
