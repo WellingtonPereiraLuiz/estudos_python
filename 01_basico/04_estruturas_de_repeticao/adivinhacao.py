@@ -14,8 +14,10 @@ import random
 
 print("Adivinhe o numero")
 print("O numero correto esta entre 0 a 101")
-tentativa = input(int("Digite a sua tentativa: "))
+tentativa = 0
 number_correct = random
 print(number_correct)
 while number_correct == tentativa:
-    print('ebaa')
+    tentativa = input(int("Digite a sua tentativa: "))
+
+print('ebaa')
