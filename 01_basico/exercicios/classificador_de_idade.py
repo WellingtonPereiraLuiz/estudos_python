@@ -11,7 +11,7 @@ while True:
             print(f"Jovem com desconto de 45%. Valor do ingresso: R${desconto}.")
         else:
             print(f"Jovem so possui desconto com carteirinha de estudante. Valor do ingresso: R${ingresso} ")
-    elif idade > 18:
+    elif 18 < idade <= 60:
         print(f"Adulto não possui desconto. Valor do ingresso: R${ingresso}.")
     elif idade > 60:
         desconto = (20 / 100) * ingresso 
