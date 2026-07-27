@@ -1,36 +1,109 @@
 """
 Wellington Pereira luiz - 26-01-2025 - PT-BR
 """
-soma = 0
 teste = []
-nota_aluno = []
 alunos = {'nome':'nome', 'idade':'idade', 'nota':[], 'nota_media':'nota_media', 'situacao':'situacao'}
-quantidade = int(input("Deseja add quantos alunos? (Maximo 5!!!)"))
 
-for i in range(quantidade):
-    nome_aluno = input(f"\nDigite o nome do {i+1} aluno: ")
-    idade_aluno = int(input(f"\nDigite a idade do {i+1} aluno: "))
-    for i in range(4):
-        nota = int(input(f"\nDigite a nota da {i+1}° materia do {nome_aluno}:"))
-        nota_aluno.append(nota)
-        soma += nota
 
-    media = soma / 4
-    if media >= 7:
+def classificar(media):
+
+    if media >= 7 and media <= 10:
         situacao = "Aprovado"
     elif media < 7 and media >= 5:
         situacao = "Recuperacao"
-    elif media < 5:
+    elif media < 5 and media >= 0:
         situacao = "reprovado"
     else:
-        print("Nota invalida!")
+        situacao = "Nota invalida!"
 
-    alunos = {'nome':nome_aluno, 'idade': idade_aluno, 'nota': nota_aluno, 'nota_media':media, 'situacao': situacao}
+
+
+
+    return situacao
+
+
+def ler_aluno(i):
+    nota_aluno = []
+    soma = 0
+    nome_aluno = input(f"\nDigite o nome do {i+1} aluno: ")
+    idade_aluno = int(input(f"\nDigite a idade do {i+1} aluno: "))
+    j = 0
+    while j < 4:
+        nota = float(input(f"\nDigite a nota da {j+1}° materia do {nome_aluno}:"))
+        if nota >= 0 and nota <= 10:
+            nota_aluno.append(nota)
+            soma = nota + soma
+            j += 1
+        else:
+            print("Nota invalida(0 a 10)")
+            print("Digite novamente")
+  
+
+    media = calcular_media(soma)
+    situacao = classificar(media)
+        
+    alunos = {
+        'nome':nome_aluno, 
+        'idade': idade_aluno, 
+        'nota': nota_aluno, 
+        'nota_media':media, 
+        'situacao': situacao
+        }
     teste.append(alunos)
-   
 
 
-print(teste)
+    return teste
+
+def calcular_media(soma):
+    media = soma / 4
+    return media
+
+
+
+quantidade = int(input("Deseja add quantos alunos? (Maximo 5!!!)"))
+for i in range(quantidade):
+    teste = ler_aluno(i)
+  
+print("\nDados dos alunos cadastrados:")
+for aluno in teste:
+    print(f"\nAluno: {aluno['nome']}")
+    print(f"Idade: {aluno['idade']}")
+    print(f"Notas: {aluno['nota']}")
+    print(f"Média: {aluno['nota_media']}")
+    print(f"Situação: {aluno['situacao']}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
